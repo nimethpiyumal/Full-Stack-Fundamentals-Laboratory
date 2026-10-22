@@ -1,0 +1,168 @@
+/* ---------- Global ---------- */
+* {
+  box-sizing: border-box;   /* padding and border stay inside the width */
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: #7f888f;           /* grey paragraph text */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+/* centres the content and limits its width */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+h1, h2, h3 {
+  color: #3d4449;           /* dark headings */
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+  display: flex;
+  justify-content: space-between;   /* name left, nav right */
+  align-items: center;
+  padding: 20px 0 12px;
+  border-bottom: 3px solid #f56a6a; /* coral line below the header */
+}
+
+.site-name {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #3d4449;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f56a6a;           /* coral accent */
+}
+
+/* ---------- Outlined link button ---------- */
+.btn {
+  display: inline-block;
+  padding: 4px 18px;
+  border: 1px solid #f56a6a;
+  border-radius: 3px;
+  color: #f56a6a;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f56a6a;
+  color: white;
+}
+
+/* ---------- Home page ---------- */
+.banner {
+  margin-top: 20px;
+}
+
+.main-heading {
+  margin: 25px 0 5px;
+  font-size: 34px;
+}
+
+.tagline {
+  margin: 0 0 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.intro p {
+  max-width: 600px;
+  font-size: 14px;
+}
+
+hr {
+  margin: 35px 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* heading with a short coral underline */
+.section-title {
+  display: inline-block;
+  margin: 20px 0 25px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  border-bottom: 3px solid #f56a6a;
+}
+
+/* four feature items in two columns */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 40px;
+  color: #f56a6a;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+}
+
+.feature h3 {
+  margin: 0 0 5px;
+  font-size: 17px;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* ---------- Projects page ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two equal columns */
+  gap: 30px;
+}
+
+.projects h3 {
+  margin: 12px 0 4px;
+  font-size: 17px;
+}
+
+.projects p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 0;
+}
